@@ -9,7 +9,7 @@
 
 
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* overflow: hidden; */
     /* overflow-y: hidden; */
 }
@@ -84,7 +84,7 @@ body {
 .bgimage {
     background-image: url(./banner-01.jpg);
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ body {
 .useflex .useimg {
     background-image: url(./table\ image.jpg);
     height: 500px;
-    width: 570px;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -168,38 +168,60 @@ body {
     height: 620px;
 }
 
-@media(width<635px){
-   
+@media (width<1255px) {
+    .useflex .gold {
+        width: 50%;
+
+    }
 }
+
+@media (width<1100px) {
+    .useflex .gold {
+        width: 100%;
+
+    }
+}
+
+@media(width<635px) {}
 
 .usebhr {
     /* border: 3px solid black; */
     /* box-shadow:  rgb(38, 57, 77) 0px 20px 30px -10px;; */
     padding: 0 25px;
-    line-height: 60px;
+    line-height: 50px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
 }
-@media(width<1740px){
-.usebhr{
-    overflow: hidden;
-}
+
+@media(width<650px) {
+    .usebhr {
+        line-height: 40px
+    }
 }
 
-@media(width<1050px){
-    .usebhr{
+@media(width<410px) {
+    .usebhr h1 {
+        font-size: 30px;
+    }
+}
+
+@media(min-width:1101px) and (max-width:1216px) {
+    .usebhr .graybackground .p2 {
+        line-height: 40px;
+        /* margin: 0px 20px; */
+
+    }
+}
+
+@media(width<1050px) {
+    .useimg {
         margin: 0px 20px;
 
     }
 }
-@media(width<1050px){
-    .useimg{
-        margin: 0px 20px;
 
-    }
-}
-@media(width<1050px){
-    .cardlogo{
+@media(width<1050px) {
+    .cardlogo {
         margin: 0px 20px;
 
     }
@@ -212,7 +234,7 @@ body {
 
 .usebhr h1 {
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 43px;
 }
 
 .graybackground .p1 {
@@ -224,7 +246,7 @@ body {
 } */
 .cardlogo {
     /* border: 2px solid black; */
-    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     ;
 }
 
@@ -240,98 +262,439 @@ body {
     justify-content: center;
     /* width: 435px; */
     gap: 20px;
-    align-items: center; 
-/* overflow: hidden; */
-flex-wrap: nowrap;
+    align-items: center;
+    /* overflow: hidden; */
+    flex-wrap: nowrap;
 }
-@media (width<1400px) {
+
+@media(width<1100px) {
+    .cardlogo {
+        margin-bottom: 15px;
+    }
+}
+
+@media (width<1100px) {
     .useflex {
         display: flex;
         justify-content: center;
         gap: 15px;
-        align-items: center; 
-    overflow: hidden;
-    flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+        flex-wrap: wrap;
     }
 }
+
 .father {
     margin: 90px 290px;
     /* overflow: hidden; */
 }
-@media(width<1725px){
+
+@media(width<1725px) {
     .father {
         margin: 90px 270px;
- 
+
     }
 }
-@media(width<1685px){
+
+@media(width<1685px) {
     .father {
         margin: 90px 260px;
- 
+
     }
 }
-@media(width<1665px){
+
+@media(width<1665px) {
     .father {
         margin: 90px 250px;
- 
+
     }
 }
-@media(width<1645px){
+
+@media(width<1645px) {
     .father {
         margin: 90px 240px;
- 
+
     }
 }
-@media(width<1625px){
+
+@media(width<1625px) {
     .father {
         margin: 90px 200px;
- 
+
     }
 }
-@media(width<1545px){
+
+@media(width<1545px) {
     .father {
         margin: 90px 160px;
- 
+
     }
 }
-@media(width<1465px){
+
+@media(width<1465px) {
     .father {
         margin: 90px 120px;
- 
+
     }
 }
-@media(width<1385){
+
+@media(width<1385) {
     .father {
         margin: 90px 80px;
     }
 }
+
 /* @media(width<675px){
     .father {
         margin: 90px 120px;
  
     }
     } */
-@media(width<675px){
+@media(width<675px) {
     .father {
         margin: 90px 80px;
- 
+
     }
-    }
-@media(width<540px){
+}
+
+@media(width<540px) {
     .father {
         margin: 90px 70px;
- 
+
     }
-    }
-@media(width<450px){
+}
+
+@media(width<450px) {
     .father {
         margin: 90px 60px;
- 
+
     }
-    }
-@media(width<430px){
+}
+
+@media(width<430px) {
     .father {
         margin: 90px 40px;
- 
+
     }
+}
+
+.content {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+
+}
+
+.content h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    padding-top: 0.5%;
+}
+
+.content b {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+@media(width<570px) {
+    .content h1 {
+        font-size: 20px;
     }
+
+    .content b {
+        font-size: 15px;
+    }
+
+}
+
+/* @media(width<530px){
+    .content b{
+        font-size: 8%;
+    }
+} */
+
+.google {
+    height: 48vh;
+    width: 100%;
+    background-image: url(1img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.secondimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondimg img {
+    border-radius: 10px;
+}
+
+@media(width<1120px) {
+    .secondimg img {
+        width: 90%;
+    }
+}
+
+.neffex {
+    padding: 20px 30px;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    border: 2px solid transparent;
+    background-color: #ffe9e9;
+    /* background-color: red; */
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    margin: 80px 80px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.thirtyfour {
+    color: #f35525;
+    font-size: 22px;
+}
+
+.building {
+    font-size: medium;
+}
+
+.flex-item-left {
+    flex: 30%;
+    max-width: 292px;
+
+}
+
+.flex-item-right {
+    flex: 30%;
+    max-width: 292px;
+
+
+}
+
+.flex-item-right1 {
+    flex: 30%;
+    max-width: 292px;
+}
+
+@media (width<1000px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+}
+
+.div1 h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.div2 button {
+    color: white;
+    background-color: black;
+    padding: 12px 25px;
+    font-size: 18px;
+    margin: 0px 8px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+}
+
+@media (width<630px) {
+    .div2 button {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+}
+
+.findyourbest {
+    margin-top: 125px;
+}
+
+.maincontainer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (width<1000px) {
+    .maincontainer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .div1 h1 {
+        padding-bottom: 30px;
+    }
+}
+
+.boxs1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    line-height: 70px;
+    /* margin-top: 50px; */
+    /* text-align: center; */
+}
+
+.flexs-container {
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.flexs-item-left {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    flex: 10%;
+    /* font-size: 20px; */
+    max-height: 433px;
+    /* max-width: 300px; */
+
+}
+
+.flexs-item-right {
+    flex: 30%;
+
+    max-height: 433px;
+    /* width:570px; */
+}
+
+.flexs-item-right img {
+    height: 360px;
+    width: 570px;
+    border-radius: 15px;
+    /* border: 2px solid transparent; */
+}
+
+.flexs-item-right1 {
+    flex: 10%;
+    max-height: 433px;
+}
+
+@media (width<1230px) {
+    .flexs-item-right img {
+        width: 470px;
+    }
+}
+
+@media (width<1240px) {
+    .flexs-item-left {
+        font-size: 12px;
+
+    }
+}
+
+@media (width<1080px) {
+    .flexs-item-right1 {
+        font-size: 15px;
+    }
+}
+
+@media (width<1100px) {
+    .flexs-container {
+        flex-direction: column;
+
+    }
+
+    .flexs-item-left {
+        width: 70%;
+
+    }
+
+    .flexs-item-right img {
+        width: 100%
+    }
+
+    .flexs-item-right1 {
+        width: 80%;
+    }
+
+}
+
+.center {
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+.grid-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: 5px 60px; */
+    padding: 40px 12vw 100px 10vw;
+    gap: 30px;
+
+}
+
+.grid-item-left {
+    flex: 30%;
+    max-width: 510px;
+    padding: 20px;
+    background-color: #FAFAFA;
+    /* background-color: red; */
+    border-radius: 10px;
+    
+}
+
+.grid-item-left .afterimage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.afterimage {
+    margin-top: 12px;
+}
+
+.afterimage button {
+    background-color: #FBD9CF;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    padding: 8px 20px;
+    font-size: 15px;
+}
+
+.grid-item-left .gojoj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.grid-item-left .gojoj button {
+    background-color: #1E1E1E;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 35px;
+    font-size: 15px;
+
+}
